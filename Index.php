@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="Css/Reset.css">
     <link rel="stylesheet" type="text/css" href="Css/Style.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto|Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="Script/Posts.js"></script>
     <script type="text/javascript" src="Script/Script.js"></script>
 </head>
