@@ -85,3 +85,57 @@ header #logo
 	width:15%;
 	float: left;
 }
+header #social
+{
+	float:right;
+}
+header #social ul
+{
+	list-style:none;
+}
+header #social ul li
+{
+	float:right;
+	padding-right:5px;
+}
+header #social ul a:hover li
+{
+	opacity:0.75;
+}
+/*
+	*En esta parte se trabajara la manera o forma de como se muestran los contenidos de la pag.
+*/
+section
+{
+	float:left;
+	width:80%;
+}
+section .post
+{
+	background-color:#fff;
+	margin-top:1%;
+	margin-left:1%;
+	padding:1%;
+	overflow:hidden;
+	box-shadow:1px 1px 1px 1px rgba(0,0,0,0.37);
+}
+section .post h1
+{
+	color:#2980b9;
+	text-transform:uppercase;
+	font-size:36px;
+	font-weight:bold;
+}
+section .post .img
+{
+	float:left;
+	width:25%;
+}
+section .post .content
+{
+	color:#d35400;
+}
+aside
+{
+	float:left;
+}
