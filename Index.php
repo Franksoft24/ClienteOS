@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="Css/Reset.css">
     <link rel="stylesheet" type="text/css" href="Css/Style.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto|Lobster' rel='stylesheet' type='text/css'>
-    <!--link rel="stylesheet" type="text/css" href="Css/Fonts.css"-->
     <script type="text/javascript" src="Script/Posts.js"></script>
     <script type="text/javascript" src="Script/Script.js"></script>
 </head>
@@ -42,19 +41,33 @@
             <a href="#"><li>politicas</li></a>
         </ul>
     </nav>
+    <section id="intro">
+    	<div class="intro">
+        	<center><div class="img-intro"><center><img alt="avion.png" width="100%" src="Image/New folder/Avion.jpg"></center></div></center>
+            <h2>Viajes internacionales</h2>
+            <div class="content-intro">
+            	<p>Viaje a cualquier parte del mundo con nosotros. Y aprobeche de la más comoda tarifa del mercado que le vamos a ofrcer.</p>
+            </div>
+        </div>
+        <div class="intro">
+        	<center><div class="img-intro"><center><img alt="bus-.png" width="100%" src="Image/New folder/bus-.jpg"></center></div></center>
+            <h2>Giras y excurciones</h2>
+            <div class="content-intro">
+            	<p>Viaje a cualquier parte del pais con nosotros. Y aprobeche de la más comoda tarifa del mercado que le vamos a ofrcer.</p>
+            </div>
+        </div>
+        <div class="intro">
+        	<center><div class="img-intro"><img alt="varco.png" width="100%" src="Image/New folder/varco.jpg"></div></center>
+            <h2>Cruseros</h2>
+            <div class="content-intro">
+            	<p>Viaje a cualquier parte del mundo con nosotros. Y aprobeche de la más comoda tarifa del mercado que le vamos a ofrcer.</p>
+            </div>
+        </div>
+    </section>
     <section id="post_area">
     	<script type="text/javascript">
         	publicaciones();
         </script>
-    	<!--div class="post">
-        	<h1>Nuevos destinos</h1><hr>
-            <div class="img">
-            	<img alt="bus.png" width="100%" src="Image/post/bus.jpg">
-            </div>
-            <div class="content">
-            	Este viaje esta programado para salie el jueves 18 de octubre para mas informacion contactar con un representante de la agencia de viaje.
-            </div>
-        </div-->
     </section>
     <aside>
     </aside>
