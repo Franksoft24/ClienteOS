@@ -9,7 +9,7 @@
     <meta name="keywords" content="Viaje de invierno">
     <meta name="keywords" content="ChapiTravel-registro">
     <title>Chapi Travel / Registro</title>
-    <link rel="icon" href="Image/Favicon/favicon.png">
+    <link rel="icon" href="../Image/Favicon/favicon.png">
     <link rel="stylesheet" type="text/css" href="../Css/Reset.css">
     <link rel="stylesheet" type="text/css" href="../Css/Style.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto|Lobster' rel='stylesheet' type='text/css'>
@@ -42,31 +42,65 @@
             <a href="#"><li>politicas</li></a>
         </ul>
     </nav>
-    <section id="intro">
-    	<div class="intro">
-        	<center><div class="img-intro"><center><img alt="avion.png" width="100%" src="../Image/New folder/Avion.jpg"></center></div></center>
-            <h2>Viajes internacionales</h2>
-            <div class="content-intro">
-            	<p>Viaje a cualquier parte del mundo con nosotros. Y aprobeche de la más comoda tarifa del mercado que le vamos a ofrcer.</p>
-            </div>
-        </div>
-        <div class="intro">
-        	<center><div class="img-intro"><center><img alt="bus-.png" width="100%" src="../Image/New folder/bus-.jpg"></center></div></center>
-            <h2>Giras y excurciones</h2>
-            <div class="content-intro">
-            	<p>Viaje a cualquier parte del pais con nosotros. Y aprobeche de la más comoda tarifa del mercado que le vamos a ofrcer.</p>
-            </div>
-        </div>
-        <div class="intro">
-        	<center><div class="img-intro"><img alt="varco.png" width="100%" src="../Image/New folder/varco.jpg"></div></center>
-            <h2>Cruseros</h2>
-            <div class="content-intro">
-            	<p>Viaje a cualquier parte del mundo con nosotros. Y aprobeche de la más comoda tarifa del mercado que le vamos a ofrcer.</p>
-            </div>
-        </div>
-    </section>
-    <section id="post_area">
-    	
+    <section class="formRegistro">
+    	<center><div id="form-singup">
+        	<h1>Registrarse</h1>
+            <form action="save_user.php" method="post">
+            	<table>
+                	<tr>
+                        <td colspan="2"><input type="text" name="nombre" id="username" placeholder="Nombre"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="pApellido" id="pApellido" placeholder="Primer apellido"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="sApellido" id="sApellido" placeholder="Segundo apellido"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="DNI" id="DNI" placeholder="DNI o pasaporte"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="tel" name="telefono" id="telefono" placeholder="Telefono"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="direccion" id="direccion" placeholder="Direccion"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                        	<select name="Pais" id="Pais">
+                            	<option value="" selected>Pais</option>
+                            	<script type="text/javascript">
+									/*Esperar que me envien la lista de los paises*/
+                                </script>
+                        	</select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                        	<select name="Ciudad" id="Ciudad" >
+                            	<option value="" selected>Ciudad</option>
+                            	<script type="text/javascript">
+									/*Esperar que me envien la lista de las ciudades*/
+                                </script>
+                        	</select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="email" name="correo" id="correo" placeholder="Correo"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="password" name="password" id="password" placeholder="Contraseña"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="password" name="rpassword" id="rpassword" placeholder="Repetir contraseña"></td>
+                    </tr>
+                    <tr>
+                    	<td><input type="submit" value="Aceptar" class="aceptar"></td>
+                        <td><input type="reset" value="Cancelar" class="cancelar"></td>
+                    </tr>
+                </table>
+            </form>
+        </div></center>
     </section>
     <footer>
     	<h6>Desarrollado por chapisoft.</h6>
