@@ -14,8 +14,8 @@
     <link rel="stylesheet" type="text/css" href="Css/Style.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto|Lobster' rel='stylesheet' type='text/css'>
     <!--link rel="stylesheet" type="text/css" href="Css/Fonts.css"-->
-    <script type="text/javascript" src="Script/Script.js"></script>
     <script type="text/javascript" src="Script/Posts.js"></script>
+    <script type="text/javascript" src="Script/Script.js"></script>
 </head>
 <body>
 	<nav>
@@ -42,8 +42,11 @@
             <a href="#"><li>politicas</li></a>
         </ul>
     </nav>
-    <section>
-    	<div class="post">
+    <section id="post_area">
+    	<script type="text/javascript">
+        	publicaciones();
+        </script>
+    	<!--div class="post">
         	<h1>Nuevos destinos</h1><hr>
             <div class="img">
             	<img alt="bus.png" width="100%" src="Image/post/bus.jpg">
@@ -51,11 +54,9 @@
             <div class="content">
             	Este viaje esta programado para salie el jueves 18 de octubre para mas informacion contactar con un representante de la agencia de viaje.
             </div>
-        </div>
+        </div-->
     </section>
     <aside>
-    	<div class="content">
-        </div>
     </aside>
     <footer></footer>
 </body>
