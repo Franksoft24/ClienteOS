@@ -24,10 +24,18 @@
         </ul>
     </nav>
 	<header>
-    	<div id="logo"><img src="Image/chappi travels.png" alt="logo.png" height="100%" width="100%"></div>
+    	<div id="logo"><img src="Image/chappi travels.png" alt="logo.png" width="100%"></div>
         <h1><a href="Index.php">Chapi Travel</a></h1>
         <div id="social"></div>
     </header>
+    <nav id="menu_secundario">
+    	<ul class="nav">
+        	<a href="#"><li>inicio</li></a>
+            <a href="#"><li>acerca</li></a>
+            <a href="#"><li>contacto</li></a>
+            <a href="#"><li>politicas</li></a>
+        </ul>
+    </nav>
     <section></section>
     <aside></aside>
     <footer></footer>

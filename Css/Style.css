@@ -1,10 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
+/*
+	*Templaste: chapitravel 0.1
+	*Developed by Franksoft
+	*Description: "Esta plantilla fue desarrollada para la agencia de viaje chapi travel con tegnologia css3 y html5."
+*/
 body
 {
 	background-color:#ecf0f1;
 	font-family: 'Roboto', sans-serif;
 }
+/*
+	*En esta area estan los codigos de la barras de navegaciones principates :
+*/
 nav
 {
 	width:100%;
@@ -28,6 +36,27 @@ nav ul a:hover li
 {
 	color:#2ecc71;
 }
+nav .nav
+{
+	list-style:none;
+}
+#menu_secundario
+{
+	background-color:rgba(189,195,199,0.54);
+}
+nav .nav li
+{
+	float:left;
+	text-decoration:none;
+}
+nav .nav a:hover li
+{
+	background-color:#3498db;
+	color:#d35400;
+}
+/*
+	*Esta seccion pertenece lo que es el header o cabezera de la pagina
+*/
 header
 {
 	background-color:#fff;
