@@ -36,7 +36,7 @@
     </header>
     <nav id="menu_secundario">
     	<ul class="nav">
-        	<a href="#"><li>inicio</li></a>
+        	<a href="Index.php"><li>inicio</li></a>
             <a href="#"><li>acerca</li></a>
             <a href="#"><li>contacto</li></a>
             <a href="#"><li>politicas</li></a>
@@ -44,21 +44,21 @@
     </nav>
     <section id="intro">
     	<div class="intro">
-        	<center><div class="img-intro"><center><img alt="avion.png" width="100%" src="Image/New folder/Avion.jpg"></center></div></center>
+        	<center><div class="img-intro"><center><img alt="avion.png" width="100%" src="Image/New folder/Avion.png"></center></div></center>
             <h2>Viajes internacionales</h2>
             <div class="content-intro">
             	<p>Viaje a cualquier parte del mundo con nosotros. Y aprobeche de la más comoda tarifa del mercado que le vamos a ofrcer.</p>
             </div>
         </div>
         <div class="intro">
-        	<center><div class="img-intro"><center><img alt="bus-.png" width="100%" src="Image/New folder/bus-.jpg"></center></div></center>
+        	<center><div class="img-intro"><center><img alt="bus-.png" width="100%" src="Image/New folder/bus-.png"></center></div></center>
             <h2>Giras y excurciones</h2>
             <div class="content-intro">
             	<p>Viaje a cualquier parte del pais con nosotros. Y aprobeche de la más comoda tarifa del mercado que le vamos a ofrcer.</p>
             </div>
         </div>
         <div class="intro">
-        	<center><div class="img-intro"><img alt="varco.png" width="100%" src="Image/New folder/varco.jpg"></div></center>
+        	<center><div class="img-intro"><img alt="varco.png" width="100%" src="Image/New folder/varco.png"></div></center>
             <h2>Cruseros</h2>
             <div class="content-intro">
             	<p>Viaje a cualquier parte del mundo con nosotros. Y aprobeche de la más comoda tarifa del mercado que le vamos a ofrcer.</p>

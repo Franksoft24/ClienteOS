@@ -36,7 +36,7 @@
     </header>
     <nav id="menu_secundario">
     	<ul class="nav">
-        	<a href="#"><li>inicio</li></a>
+        	<a href="../Index.php"><li>inicio</li></a>
             <a href="#"><li>acerca</li></a>
             <a href="#"><li>contacto</li></a>
             <a href="#"><li>politicas</li></a>
@@ -48,26 +48,26 @@
             <form action="save_user.php" method="post">
             	<table>
                 	<tr>
-                        <td colspan="2"><input type="text" name="nombre" id="username" placeholder="Nombre"></td>
+                        <td colspan="2"><input type="text" name="nombre" id="username" placeholder="Nombre" required></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="text" name="pApellido" id="pApellido" placeholder="Primer apellido"></td>
+                        <td colspan="2"><input type="text" name="pApellido" id="pApellido" placeholder="Primer apellido" required></td>
                     </tr>
                     <tr>
                         <td colspan="2"><input type="text" name="sApellido" id="sApellido" placeholder="Segundo apellido"></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="text" name="DNI" id="DNI" placeholder="DNI o pasaporte"></td>
+                        <td colspan="2"><input type="text" name="DNI" id="DNI" placeholder="DNI o pasaporte" required></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="tel" name="telefono" id="telefono" placeholder="Telefono"></td>
+                        <td colspan="2"><input type="tel" name="telefono" id="telefono" placeholder="Telefono" required></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="text" name="direccion" id="direccion" placeholder="Direccion"></td>
+                        <td colspan="2"><input type="text" name="direccion" id="direccion" placeholder="Direccion" required></td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                        	<select name="Pais" id="Pais">
+                        	<select name="Pais" id="Pais" required>
                             	<option value="" selected>Pais</option>
                             	<script type="text/javascript">
 									/*Esperar que me envien la lista de los paises*/
@@ -77,7 +77,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                        	<select name="Ciudad" id="Ciudad" >
+                        	<select name="Ciudad" id="Ciudad"  required>
                             	<option value="" selected>Ciudad</option>
                             	<script type="text/javascript">
 									/*Esperar que me envien la lista de las ciudades*/
@@ -86,13 +86,13 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="email" name="correo" id="correo" placeholder="Correo"></td>
+                        <td colspan="2"><input type="email" name="correo" id="correo" placeholder="Correo" required></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="password" name="password" id="password" placeholder="Contraseña"></td>
+                        <td colspan="2"><input type="password" name="password" id="password" placeholder="Contraseña" required></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="password" name="rpassword" id="rpassword" placeholder="Repetir contraseña"></td>
+                        <td colspan="2"><input type="password" name="rpassword" id="rpassword" placeholder="Repetir contraseña" required></td>
                     </tr>
                     <tr>
                     	<td><input type="submit" value="Aceptar" class="aceptar"></td>
