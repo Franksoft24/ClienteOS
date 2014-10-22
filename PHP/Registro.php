@@ -66,7 +66,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                        	<select name="Pais" id="Pais" required>
+                        	<select name="Pais" id="Pais">
                             	<option value="" selected>Pais</option>
                             	<script type="text/javascript">
 									/*Esperar que me envien la lista de los paises*/
@@ -76,7 +76,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                        	<select name="Ciudad" id="Ciudad"  required>
+                        	<select name="Ciudad" id="Ciudad">
                             	<option value="" selected>Ciudad</option>
                             	<script type="text/javascript">
 									/*Esperar que me envien la lista de las ciudades*/
