@@ -20,7 +20,7 @@
 <body>
 	<nav>
     	<ul>
-        	<a href="#"><li>Acceder</li></a>
+        	<a href="PHP/Log-in.php"><li>Acceder</li></a>
             <a href="PHP/Registro.php"><li>Registrarse</li></a>
         </ul>
     </nav>
