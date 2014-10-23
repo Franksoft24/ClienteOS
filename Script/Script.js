@@ -1,4 +1,31 @@
 // JavaScript Document
+//Funciones las cuales voy a necesitar para hacer validaciones mas adelante
+
+function trim(palabra)
+{
+	var n = palabra.length;
+	var p_espacio ="";
+	for (var i = 0; i<= n ; i++)
+	{
+		if (palabra.charAt(i)==" ")
+			p_espacio += palabra.charAt(i).replace(" ","");
+		else
+			p_espacio += palabra.charAt(i);
+	}
+	return p_espacio;
+}
+
+function vacio(i)
+{
+	var confirmar = trim(i);
+	if (confirmar.length < 1){
+		return true;
+	}else{
+		return false;
+	}
+}
+//---------------------------------------------------------------------------
+
 function publicaciones()
 {
 	var posts ="";
@@ -10,4 +37,11 @@ function publicaciones()
 	}
 	document.getElementById('post_area').innerHTML=posts;
 }
-
+function verify()
+{
+	var password = document.getElementById('password').value;
+	var re_password = document.getElementById('rpassword').value;
+	if (password != re_password)
+		alert('Las contraseñas no coinsiden.')
+		document.getElementById('registrar').disabled=true;
+}

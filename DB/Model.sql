@@ -2,7 +2,7 @@ CREATE TABLE `Usuarios` (
 `UsuarioID` int NOT NULL AUTO_INCREMENT,
 `Nombre` varchar(20) NOT NULL,
 `Clave` varchar(50) NOT NULL,
-`PersonaID` int NOT NULL,
+`DocumentoIdentidad` varchar(25) NOT NULL,
 `Rol` int NOT NULL,
 PRIMARY KEY (`UsuarioID`) ,
 UNIQUE INDEX `IDX_UsuarioID` (`UsuarioID`)
@@ -16,7 +16,7 @@ CREATE TABLE `Personas` (
 `SegundoApellido` varchar(50) NULL,
 `Correo` varchar(51) NULL,
 `Telefono` varchar(11) NULL,
-`DireccionID` int NOT NULL,
+/*'`DireccionID` int NOT NULL,: comentare este para poder hacer mis primeros mantenimientos'*/
 PRIMARY KEY (`PersonaID`) ,
 UNIQUE INDEX `IDX_DocumentoIdentidad` (`DocumentoIdentidad`),
 UNIQUE INDEX `IDX_PersonaID` (`PersonaID`)
@@ -118,8 +118,8 @@ INDEX `IDX_PagoID` (`PagoID`)
 
 ALTER TABLE `Ciudades` ADD CONSTRAINT `FK_CiudadPais` FOREIGN KEY (`PaisID`) REFERENCES `Paises` (`PaisID`);
 ALTER TABLE `Direcciones` ADD CONSTRAINT `FK_CiudadDireccion` FOREIGN KEY (`CiudadID`) REFERENCES `Ciudades` (`CiudadID`);
-ALTER TABLE `Personas` ADD CONSTRAINT `FK_PersonaDireccion` FOREIGN KEY (`DireccionID`) REFERENCES `Direcciones` (`DireccionID`);
-ALTER TABLE `Usuarios` ADD CONSTRAINT `FK_UsuarioPersona` FOREIGN KEY (`PersonaID`) REFERENCES `Personas` (`PersonaID`);
+/*'ALTER TABLE `Personas` ADD CONSTRAINT `FK_PersonaDireccion` FOREIGN KEY (`DireccionID`) REFERENCES `Direcciones` (`DireccionID`);'*/
+ALTER TABLE `Usuarios` ADD CONSTRAINT `FK_UsuarioPersona` FOREIGN KEY (`DocumentoIdentidad`) REFERENCES `Personas` (`DocumentoIdentidad`);
 ALTER TABLE `Destinos` ADD CONSTRAINT `FK_DestinoDireccion` FOREIGN KEY (`DireccionID`) REFERENCES `Direcciones` (`DireccionID`);
 ALTER TABLE `Viajes` ADD CONSTRAINT `FK_ViajeADestino` FOREIGN KEY (`DestinoID`) REFERENCES `Destinos` (`DestinoID`);
 ALTER TABLE `Reservaciones` ADD CONSTRAINT `FK_ReservacionesViajes` FOREIGN KEY (`ViajeID`) REFERENCES `Viajes` (`ViajeID`);

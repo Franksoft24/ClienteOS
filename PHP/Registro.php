@@ -61,7 +61,7 @@
                     <tr>
                         <td colspan="2"><input type="tel" name="telefono" id="telefono" placeholder="Telefono" required></td>
                     </tr>
-                    <tr>
+                    <!--tr>
                         <td colspan="2"><input type="text" name="direccion" id="direccion" placeholder="Direccion" required></td>
                     </tr>
                     <tr>
@@ -83,7 +83,7 @@
                                 </script>
                         	</select>
                         </td>
-                    </tr>
+                    </tr-->
                     <tr>
                         <td colspan="2"><input type="email" name="correo" id="correo" placeholder="Correo" required></td>
                     </tr>
@@ -94,7 +94,7 @@
                         <td colspan="2"><input type="password" name="rpassword" id="rpassword" placeholder="Repetir contraseña" required></td>
                     </tr>
                     <tr>
-                    	<td><input type="submit" value="Aceptar" class="aceptar"></td>
+                    	<td><input type="submit" value="Aceptar" class="aceptar" onFocus="verify()"></td>
                         <td><input type="reset" value="Cancelar" class="cancelar"></td>
                     </tr>
                 </table>
