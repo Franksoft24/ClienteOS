@@ -20,7 +20,7 @@
 	<nav>
     	<ul>
         	<a href="Log-in.php"><li>Acceder</li></a>
-            <a href="#"><li>Registrarse</li></a>
+            <a href="Registro.php"><li>Registrarse</li></a>
         </ul>
     </nav>
 	<header>
@@ -31,11 +31,11 @@
             	<a href="#"><li><img alt="twitter.svg" src="../Image/svg/social71.svg" width="25px"></li></a>
             </ul>
         </div>
-        <h1><a href="../Index.php">Chapi Travel</a></h1>
+        <h1><a href="../index.php">Chapi Travel</a></h1>
     </header>
     <nav id="menu_secundario">
     	<ul class="nav">
-        	<a href="../Index.php"><li>inicio</li></a>
+        	<a href="../index.php"><li>inicio</li></a>
             <a href="#"><li>acerca</li></a>
             <a href="#"><li>contacto</li></a>
             <a href="#"><li>politicas</li></a>

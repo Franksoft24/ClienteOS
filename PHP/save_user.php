@@ -26,15 +26,12 @@
 			echo "<script type='text/javascript'> mensage_error(); </script>";
 			header("location:Registro.php");
 		}else{
-			$verificar_registro = mysql_query("INSERT INTO personas (DocumentoIdentidad, Nombres, PrimerApellido, SegundoApellido, Correo, Telefono) VALUES ('$_POST[DNI]','$_POST[nombre]','$_POST[pApellido]','$_POST[sApellido]','$_POST[correo]','$_POST[telefono]')",$conection) or die ("<script type='text/javascript'> alert('Cannot be register'); </script>");
-			if ($verificar_registro == false){
-				header("location:Registro.php");
-			}
-			mysql_query("Insert into usuarios(Nombre, Clave, DocumentoIdentidad, Rol) VALUES ('$_POST[nombre]','$_POST[password]','$_POST[DNI]',01)",$conection) or die ("<script type='text/javascript'> alert('user cannot be create'); </script>" .mysql_error());
-			"<script type='text/javascript'>
+			$verificar_registro = mysql_query("INSERT INTO `Personas`(`DocumentoIdentidad`, `Nombres`, `PrimerApellido`, `SegundoApellido`, `Correo`, `Telefono`) VALUES ('$_POST[DNI]','$_POST[nombre]','$_POST[pApellido]','$_POST[sApellido]','$_POST[correo]','$_POST[telefono]')",$conection) or die ("<script type='text/javascript'> alert('Cannot be register'); location.href='Registro.php'; </script>");
+			mysql_query("INSERT INTO `Usuarios`(`Nombre`, `Clave`, `DocumentoIdentidad`, `Rol`) VALUES ('$_POST[nombre]','$_POST[password]','$_POST[DNI]',01)",$conection) or die ("<script type='text/javascript'> alert('user cannot be create'); location.href='Registro.php'; </script>" .mysql_error());
+			echo "<script type='text/javascript'>
 				alert('Registrado sastifactoriamente.')
+				location.href='Log-in.php'
 			</script>";
-			header("location:Log-in.php");
 		}
 		
 	?>

@@ -32,11 +32,11 @@
             	<a href="#"><li><img alt="twitter.svg" src="Image/svg/social71.svg" width="25px"></li></a>
             </ul>
         </div>
-        <h1><a href="Index.php">Chapi Travel</a></h1>
+        <h1><a href="index.php">Chapi Travel</a></h1>
     </header>
     <nav id="menu_secundario">
     	<ul class="nav">
-        	<a href="Index.php"><li>inicio</li></a>
+        	<a href="index.php"><li>inicio</li></a>
             <a href="#"><li>acerca</li></a>
             <a href="#"><li>contacto</li></a>
             <a href="#"><li>politicas</li></a>
@@ -47,21 +47,21 @@
         	<center><div class="img-intro"><center><img alt="avion.png" width="100%" src="Image/New folder/Avion.png"></center></div></center>
             <h2>Viajes internacionales</h2>
             <div class="content-intro">
-            	<p>Viaje a cualquier parte del mundo con nosotros. Y aprobeche de la más comoda tarifa del mercado que le vamos a ofrcer.</p>
+            	<p>Viaje a cualquier parte del mundo con nosotros. Y aproveche de la más cómoda tarifa del mercado que le vamos a ofrecer.</p>
             </div>
         </div>
         <div class="intro">
         	<center><div class="img-intro"><center><img alt="bus-.png" width="100%" src="Image/New folder/bus-.png"></center></div></center>
-            <h2>Giras y excurciones</h2>
+            <h2>Giras y excursiones</h2>
             <div class="content-intro">
-            	<p>Viaje a cualquier parte del pais con nosotros. Y aprobeche de la más comoda tarifa del mercado que le vamos a ofrcer.</p>
+            	<p>Viaje a cualquier parte del país con nosotros. Y aproveche de la más cómoda tarifa del mercado que le vamos a ofrecer.</p>
             </div>
         </div>
         <div class="intro">
         	<center><div class="img-intro"><img alt="varco.png" width="100%" src="Image/New folder/varco.png"></div></center>
-            <h2>Cruseros</h2>
+            <h2>Cruceros</h2>
             <div class="content-intro">
-            	<p>Viaje a cualquier parte del mundo con nosotros. Y aprobeche de la más comoda tarifa del mercado que le vamos a ofrcer.</p>
+            	<p>Viaje a cualquier parte del mundo con nosotros. Y aproveche de la más cómoda tarifa del mercado que le vamos a ofrecer.</p>
             </div>
         </div>
     </section>
@@ -71,7 +71,7 @@
         </script>
     </section>
     <footer>
-    	<h6>Desarrollado por chapisoft.</h6>
+    	<h6>Desarrollado por chapisoft. Con tecnología PHP, HTML5 y CSS3</h6>
     </footer>
 </body>
 </html>

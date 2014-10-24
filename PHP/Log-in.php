@@ -40,7 +40,7 @@
         <div id="links">
         	<ul>
             	<a href="Registro.php"><li>Registrarse</li></a>
-                <a href="../Index.php"><li>Ir a la pagina principal</li></a>
+                <a href="../index.php"><li>Ir a la pagina principal</li></a>
             </ul>
         </div>
     </section>
