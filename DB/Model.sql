@@ -1,25 +1,21 @@
 CREATE TABLE `Usuarios` (
 `UsuarioID` int NOT NULL AUTO_INCREMENT,
-`Nombre` varchar(20) NOT NULL,
-`Clave` varchar(50) NOT NULL,
+`Correo` varchar(20) NOT NULL,
+`PW` varchar(50) NOT NULL,
 `DocumentoIdentidad` varchar(25) NOT NULL,
 `Rol` int NOT NULL,
 PRIMARY KEY (`UsuarioID`) ,
-UNIQUE INDEX `IDX_UsuarioID` (`UsuarioID`)
+UNIQUE INDEX `IDX_UsuarioID` (`UsuarioID`),UNIQUE INDEX `IDX_Correo` (`Correo`)
 );
 
 CREATE TABLE `Personas` (
-`PersonaID` int NOT NULL AUTO_INCREMENT,
 `DocumentoIdentidad` varchar(25) NOT NULL,
 `Nombres` varchar(50) NOT NULL,
 `PrimerApellido` varchar(50) NOT NULL,
 `SegundoApellido` varchar(50) NULL,
-`Correo` varchar(51) NULL,
-`Telefono` varchar(11) NULL,
-/*'`DireccionID` int NOT NULL,: comentare este para poder hacer mis primeros mantenimientos'*/
-PRIMARY KEY (`PersonaID`) ,
-UNIQUE INDEX `IDX_DocumentoIdentidad` (`DocumentoIdentidad`),
-UNIQUE INDEX `IDX_PersonaID` (`PersonaID`)
+`Telefono` varchar(11) NULL,`Genero` varchar(1) NOT NULL,
+PRIMARY KEY (`DocumentoIdentidad`) ,
+UNIQUE INDEX `IDX_DocumentoIdentidad` (`DocumentoIdentidad`)
 );
 
 CREATE TABLE `Viajes` (
@@ -37,7 +33,7 @@ UNIQUE INDEX `IDX_ViajeID` (`ViajeID`)
 CREATE TABLE `Reservaciones` (
 `ReservacionID` int NOT NULL AUTO_INCREMENT,
 `ViajeID` int NOT NULL,
-`PersonaID` int NOT NULL,
+`DocumentoIdentidad` varchar(25) NOT NULL,
 `Estado` int NOT NULL,
 PRIMARY KEY (`ReservacionID`) ,
 INDEX `IDX_ReservacionID` (`ReservacionID`)
@@ -118,12 +114,11 @@ INDEX `IDX_PagoID` (`PagoID`)
 
 ALTER TABLE `Ciudades` ADD CONSTRAINT `FK_CiudadPais` FOREIGN KEY (`PaisID`) REFERENCES `Paises` (`PaisID`);
 ALTER TABLE `Direcciones` ADD CONSTRAINT `FK_CiudadDireccion` FOREIGN KEY (`CiudadID`) REFERENCES `Ciudades` (`CiudadID`);
-/*'ALTER TABLE `Personas` ADD CONSTRAINT `FK_PersonaDireccion` FOREIGN KEY (`DireccionID`) REFERENCES `Direcciones` (`DireccionID`);'*/
 ALTER TABLE `Usuarios` ADD CONSTRAINT `FK_UsuarioPersona` FOREIGN KEY (`DocumentoIdentidad`) REFERENCES `Personas` (`DocumentoIdentidad`);
 ALTER TABLE `Destinos` ADD CONSTRAINT `FK_DestinoDireccion` FOREIGN KEY (`DireccionID`) REFERENCES `Direcciones` (`DireccionID`);
 ALTER TABLE `Viajes` ADD CONSTRAINT `FK_ViajeADestino` FOREIGN KEY (`DestinoID`) REFERENCES `Destinos` (`DestinoID`);
 ALTER TABLE `Reservaciones` ADD CONSTRAINT `FK_ReservacionesViajes` FOREIGN KEY (`ViajeID`) REFERENCES `Viajes` (`ViajeID`);
-ALTER TABLE `Reservaciones` ADD CONSTRAINT `FK_ReservacionesPersonas` FOREIGN KEY (`PersonaID`) REFERENCES `Personas` (`PersonaID`);
+ALTER TABLE `Reservaciones` ADD CONSTRAINT `FK_ReservacionesPersonas` FOREIGN KEY (`DocumentoIdentidad`) REFERENCES `Personas` (`DocumentoIdentidad`);
 ALTER TABLE `Servicios` ADD CONSTRAINT `FK_ServicioTipo` FOREIGN KEY (`ServicioTipoID`) REFERENCES `ServiciosTipos` (`ServicioTipoID`);
 ALTER TABLE `Servicios` ADD CONSTRAINT `FK_ServicioSuplidor` FOREIGN KEY (`SuplidorID`) REFERENCES `Suplidores` (`SuplidorID`);
 ALTER TABLE `ServiciosEnViajes` ADD CONSTRAINT `FK_ServicioDeViaje` FOREIGN KEY (`ServicioID`) REFERENCES `Servicios` (`ServicioID`);

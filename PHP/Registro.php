@@ -59,6 +59,14 @@
                         <td colspan="2"><input type="text" name="DNI" id="DNI" placeholder="DNI o pasaporte" required></td>
                     </tr>
                     <tr>
+                    	<td colspan="2">
+                        	<select name="Genero" id="Pais">
+                            	<option value="M">Hombre</option>
+                            	<option value="F">Mujer</option>
+                        	</select>
+                        </td>
+                    </tr>
+                    <tr>
                         <td colspan="2"><input type="tel" name="telefono" id="telefono" placeholder="Telefono" required></td>
                     </tr>
                     <!--tr>

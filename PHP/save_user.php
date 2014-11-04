@@ -13,6 +13,17 @@
 			background-position:top left;
 			background-size:100%;
 			background-attachment:fixed;
+			position:absolute;
+			height:-moz-calc(100%);
+			height:-webkit-calc(100%);
+			height:-o-calc(100%);
+			height:-ms-calc(100%);
+			height:calc(100%);
+			width:-moz-calc(100%);
+			width:-webkit-calc(100%);
+			width:-o-calc(100%);
+			widtht:-ms-calc(100%);
+			width:calc(100%);
 		}
 		
     </style>
@@ -26,14 +37,13 @@
 			echo "<script type='text/javascript'> mensage_error(); </script>";
 			header("location:Registro.php");
 		}else{
-			$verificar_registro = mysql_query("INSERT INTO `Personas`(`DocumentoIdentidad`, `Nombres`, `PrimerApellido`, `SegundoApellido`, `Correo`, `Telefono`) VALUES ('$_POST[DNI]','$_POST[nombre]','$_POST[pApellido]','$_POST[sApellido]','$_POST[correo]','$_POST[telefono]')",$conection) or die ("<script type='text/javascript'> alert('Cannot be register'); location.href='Registro.php'; </script>");
-			mysql_query("INSERT INTO `Usuarios`(`Nombre`, `Clave`, `DocumentoIdentidad`, `Rol`) VALUES ('$_POST[nombre]','$_POST[password]','$_POST[DNI]',01)",$conection) or die ("<script type='text/javascript'> alert('user cannot be create'); location.href='Registro.php'; </script>" .mysql_error());
+			$verificar_registro = mysql_query("INSERT INTO `Personas`(`DocumentoIdentidad`, `Nombres`, `PrimerApellido`, `SegundoApellido`, `Telefono`, `Genero`) VALUES ('$_POST[DNI]','$_POST[nombre]','$_POST[pApellido]','$_POST[sApellido]','$_POST[telefono]','$_POST[Genero]')",$conection) or die ("<script type='text/javascript'> alert('Cannot be register'); location.href='Registro.php'; </script>");
+			mysql_query("INSERT INTO `Usuarios`(`Correo`, `PW`, `DocumentoIdentidad`, `Rol`) VALUES ('$_POST[correo]','$_POST[password]','$_POST[DNI]',01)",$conection) or die ("<script type='text/javascript'> alert('user cannot be create'); location.href='Registro.php'; </script>" .mysql_error());
 			echo "<script type='text/javascript'>
 				alert('Registrado sastifactoriamente.')
-				location.href='Log-in.php'
+				location.href='Log-in.php'	
 			</script>";
 		}
-		
 	?>
     <script type="text/javascript">
     	function mensage_error(){

@@ -22,13 +22,13 @@
         	<h1>Log-in</h1>
         </div>
         <div id="formLI"><center>
-        	<form method="post" action="loguear">
+        	<form method="post" action="loguear.php">
             	<table>
                 	<tr>
-                    	<td colspan="2"><input type="text" name="User" placeholder="Nombre de usuario o correo" required></td>
+                    	<td colspan="2"><input type="email" name="correo" placeholder="Correo" required></td>
                     </tr>
                     <tr>
-                    	<td colspan="2"><input type="password" name="passord" placeholder="********" required></td>
+                    	<td colspan="2"><input type="password" name="password" placeholder="********" required></td>
                     </tr>
                     <tr>
                     	<td width="50%"></td>

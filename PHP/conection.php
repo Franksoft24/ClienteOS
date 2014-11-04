@@ -1,8 +1,8 @@
 <?php
 	
-	$user = "u687555596_frank";
-	$password = "PrGrfS6z9Z";
+	$user = "root";
+	$password = "";
 	$host = "localhost";
-	$db = "u687555596_chapi";
+	$db = "test_chappitravel";
 	
 ?>
