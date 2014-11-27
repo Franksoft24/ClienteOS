@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
     <title>Chapi Travel / Registrando</title>
-    <link rel="icon" href="../Image/Favicon/favicon.png">
+    <link rel="icon" href="../Image/Favicon/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../Css/Reset.css">
     <style>
     	body

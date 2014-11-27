@@ -9,7 +9,7 @@
     <meta name="keywords" content="Viaje de invierno">
     <meta name="keywords" content="ChapiTravel-registro">
     <title>Chapi Travel / Registro</title>
-    <link rel="icon" href="../Image/Favicon/favicon.png">
+    <link rel="icon" href="../Image/Favicon/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../Css/Reset.css">
     <link rel="stylesheet" type="text/css" href="../Css/Style.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto|Lobster' rel='stylesheet' type='text/css'>
@@ -24,7 +24,7 @@
         </ul>
     </nav>
 	<header>
-    	<div id="logo"><img src="../Image/chappi travels.png" alt="logo.png" width="100%"></div>
+    	<div id="logo"><img src="../Image/LogoCT.svg" alt="logo.png" width="100%"></div>
         <div id="social">
         	<ul>
             	<a href="#"><li><img alt="facebook.svg" src="../Image/svg/facebook7.svg" width="25px"></li></a>
@@ -44,62 +44,39 @@
     <section class="formRegistro">
     	<center><div id="form-singup">
         	<h1>Registrarse</h1>
-            <form action="save_user.php" method="post">
+            <form action="personas.php" method="post">
             	<table>
                 	<tr>
+                    	<td>Nombre:</td>
                         <td colspan="2"><input type="text" name="nombre" id="username" placeholder="Nombre" required></td>
                     </tr>
                     <tr>
+                    	<td>Primer Apellido:</td>
                         <td colspan="2"><input type="text" name="pApellido" id="pApellido" placeholder="Primer apellido" required></td>
                     </tr>
                     <tr>
+                    	<td>Segundo Apellido:</td>
                         <td colspan="2"><input type="text" name="sApellido" id="sApellido" placeholder="Segundo apellido"></td>
                     </tr>
                     <tr>
+                    	<td>Documento de identificación:</td>
                         <td colspan="2"><input type="text" name="DNI" id="DNI" placeholder="DNI o pasaporte" required></td>
                     </tr>
                     <tr>
-                    	<td colspan="2">
-                        	<select name="Genero" id="Pais">
-                            	<option value="M">Hombre</option>
-                            	<option value="F">Mujer</option>
-                        	</select>
-                        </td>
-                    </tr>
-                    <tr>
+                    	<td>Telefono:</td>
                         <td colspan="2"><input type="tel" name="telefono" id="telefono" placeholder="Telefono" required></td>
                     </tr>
-                    <!--tr>
-                        <td colspan="2"><input type="text" name="direccion" id="direccion" placeholder="Direccion" required></td>
-                    </tr>
                     <tr>
-                        <td colspan="2">
-                        	<select name="Pais" id="Pais">
-                            	<option value="" selected>Pais</option>
-                            	<script type="text/javascript">
-									/*Esperar que me envien la lista de los paises*/
-                                </script>
-                        	</select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                        	<select name="Ciudad" id="Ciudad">
-                            	<option value="" selected>Ciudad</option>
-                            	<script type="text/javascript">
-									/*Esperar que me envien la lista de las ciudades*/
-                                </script>
-                        	</select>
-                        </td>
-                    </tr-->
-                    <tr>
+                    	<td>E-mail:</td>
                         <td colspan="2"><input type="email" name="correo" id="correo" placeholder="Correo" required></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="password" name="password" id="password" placeholder="Contraseña" required></td>
+                    	<td>Contraseña:</td>
+                        <td colspan="2"><input type="password" name="password" id="password" placeholder="******" required></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="password" name="rpassword" id="rpassword" placeholder="Repetir contraseña" required></td>
+                    	<td>Repetir contraseña:</td>
+                        <td colspan="2"><input type="password" name="rpassword" id="rpassword" placeholder="******" required></td>
                     </tr>
                     <tr>
                     	<td><input type="submit" value="Aceptar" class="aceptar" onFocus="verify()"></td>
@@ -110,7 +87,7 @@
         </div></center>
     </section>
     <footer>
-    	<h6>Desarrollado por chapisoft.</h6>
+    	<h6>Desarrollado por chapisoft. Con tecnología PHP, HTML5 y CSS3.</h6>
     </footer>
 </body>
 </html>

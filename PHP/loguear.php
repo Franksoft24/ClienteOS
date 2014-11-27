@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Logueando...</title>
-	<link rel="icon" href="../Image/Favicon/favicon.png">
+	<link rel="icon" href="../Image/Favicon/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../Css/Reset.css">
     <style>
     	#body
@@ -42,7 +42,7 @@
 				location.href='Log-in.php'	
 			</script>";
 		}else{
-			$user = mysql_query("SELECT Correo,PW,Rol FROM usuarios WHERE Correo = '$_POST[correo]'", $conection);
+			$user = mysql_query("SELECT Correo,PW,Rol,DocumentoIdentidad FROM usuarios WHERE Correo = '$_POST[correo]'", $conection);
 			/*$pw = mysql_query("Select Clave FROM usuarios WHERE Correo = '$_POST[correo]')", $conection);
 			$user_type = mysql_query("Select Rol FROM usuarios WHERE Correo = '$_POST[correo]')", $conection);*/
 			
@@ -50,11 +50,13 @@
 			if ($sesion['PW'] == $_POST['password']){
 				$pw = true;
 				$rol = $sesion['Rol'];
+				$_SESSION['username'] = $_POST['correo'];
+				$_SESSION['DocumentoIdentidad'] = $sesion['DocumentoIdentidad'];
 			}
 			if ($pw){
 				switch ($rol){
 					case 1:
-						echo "Eres un cliente";
+						header("location:Main.php");
 						break;
 					case 2:
 						echo "Eres un empleado";
@@ -72,10 +74,11 @@
 					alert('Ingreso exitoso')	
 				</script>";
 			}else{
-				echo "<script type='text/javascript'>
-					alert('Error al loguear, favor intentar de nuevo.')
-					location.href='Log-in.php'	
-				</script>";
+				/*echo "<script type='text/javascript'>
+					/*alert('Error al loguear, favor intentar de nuevo.')*/
+					/*location.href='Log-in.php'	
+				</script>";*/
+				header("location:Log-in.php");
 			}
 		}
 		

@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 /*
 	*Templaste: chapitravel 1.0
@@ -14,9 +14,11 @@ body
 	background-position:top left;
 	background-size:100%;
 	background-attachment:fixed;
+	padding-left:10%;
+	padding-right:10%;
 }
 /*
-	*En esta area estan los codigos de la barras de navegaciones principates :
+	*En esta area estan los codigos de la barras de navegacion principal:
 */
 nav
 {
@@ -161,7 +163,6 @@ section .post .content
 section .post2
 {
 	padding-top:1%;
-	padding-left:1%;
 	padding-right:1%;
 	padding:1%;
 	width:98%;

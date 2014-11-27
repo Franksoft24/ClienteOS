@@ -9,7 +9,7 @@
     <meta name="keywords" content="Viaje de invierno">
     <meta name="keywords" content="ChapiTravel-registro">
     <title>Chapi Travel / log-in</title>
-    <link rel="icon" href="../Image/Favicon/favicon.png">
+    <link rel="icon" href="../Image/Favicon/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../Css/Reset.css">
     <link rel="stylesheet" type="text/css" href="../Css/Style.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto|Lobster' rel='stylesheet' type='text/css'>

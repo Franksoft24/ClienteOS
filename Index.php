@@ -9,7 +9,7 @@
     <meta name="keywords" content="Viaje de invierno">
     <meta name="keywords" content="ChapiTravel">
     <title>Chapi Travel</title>
-    <link rel="icon" href="Image/Favicon/favicon.png">
+    <link rel="icon" href="Image/Favicon/favicon.ico">
     <link rel="stylesheet" type="text/css" href="Css/Reset.css">
     <link rel="stylesheet" type="text/css" href="Css/Style.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto|Lobster' rel='stylesheet' type='text/css'>
@@ -25,7 +25,7 @@
         </ul>
     </nav>
 	<header>
-    	<div id="logo"><img src="Image/chappi travels.png" alt="logo.png" width="100%"></div>
+    	<div id="logo"><img src="Image/LogoCT.svg" alt="logo.png" width="100%"></div>
         <div id="social">
         	<ul>
             	<a href="#"><li><img alt="facebook.svg" src="Image/svg/facebook7.svg" width="25px"></li></a>
@@ -71,7 +71,7 @@
         </script>
     </section>
     <footer>
-    	<h6>Desarrollado por chapisoft. Con tecnología PHP, HTML5 y CSS3</h6>
+    	<h6>Desarrollado por chapisoft. Con tecnología PHP, HTML5 y CSS3.</h6>
     </footer>
 </body>
 </html>
